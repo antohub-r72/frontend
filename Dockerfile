@@ -21,7 +21,8 @@ COPY . .
 
 RUN npm run build -- --prod
 
-FROM registry.access.redhat.com/ubi8/ubi-minimal
+FROM registry.access.redhat.com/ubi8:8.0
+
 LABEL name="frontend-ngnix" \
       vendor="IBM" \
       version="1.0" \
