@@ -1,7 +1,7 @@
 #### Stage 0, Build Angular
 FROM node:12.20.0-alpine as ag-build
 
-LABEL name="frontend-angular"
+LABEL name="frontend-angular"\
       version="1.0" \
       release="1.0" \
       description="Angular frontend app" \
