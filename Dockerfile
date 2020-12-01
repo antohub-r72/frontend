@@ -41,8 +41,8 @@ RUN touch /run/nginx.pid \
  && chgrp -R 0 /var/log/nginx /run/nginx.pid \
  && chmod -R g+rwx /var/log/nginx /run/nginx.pid
 
-COPY --from=ag-build /app/dist/ /usr/share/nginx/html
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=ag-build /app/dist/frontend /usr/share/nginx/html
+COPY COPY nginx.conf /etc/nginx/
 
 EXPOSE 8080
 
