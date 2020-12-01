@@ -19,7 +19,7 @@ RUN npm install
 
 COPY . .
 
-RUN npm run build -- --prod
+RUN npm run build
 
 FROM registry.access.redhat.com/ubi8:8.0
 
