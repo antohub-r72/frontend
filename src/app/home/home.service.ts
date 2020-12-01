@@ -15,6 +15,7 @@ export class HomeService {
 
   getMessage() {
     let url = BACKEND_URL +"/message"
+    console.log("Sending req to: "+url)
     return this.http.get(url);
   }
 }
