@@ -9,8 +9,6 @@ LABEL name="frontend-angular"\
       updatedDate="2020-11-30" \
       maintainer="antragha@in.ibm.com"
 
-ENV BACKEND_API_URL=localhost:3000
-
 WORKDIR /app
 
 COPY package.json package.json
@@ -19,7 +17,7 @@ RUN npm install
 
 COPY . .
 
-RUN npm run build
+RUN npm run build --prod
 
 FROM registry.access.redhat.com/ubi8:8.0
 
