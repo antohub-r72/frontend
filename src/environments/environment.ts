@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  backendApi: "frontend-app-test.2886795278-80-jago05.environments.katacoda.com"
+  backendApi: "backend-app-test.2886795280-80-jago05.environments.katacoda.com"
 };
 
 /*
